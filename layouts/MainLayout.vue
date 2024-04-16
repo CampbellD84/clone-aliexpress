@@ -181,6 +181,10 @@
 </template>
 
 <script lang="ts" setup>
+  import { useUserStore } from "~/stores/user"
+
+  const userStore = useUserStore()
+
   let isAccountMenu = ref<boolean>(false)
   let isCartHover = ref<boolean>(false)
   let isSearching = ref<boolean>(false)
